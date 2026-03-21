@@ -48,8 +48,34 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/tugbaygc/Aygaz_Python_Bootcamp/blob/main/notebookacdbfaf4f8.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/tugbaygc/Aygaz_Python_Bootcamp/blob/main/NASA_Veri_Analizi\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**☄️ NASA - Yakın Dünya Nesneleri (NEO) Tehlike Sınıflandırması**\n",
+        "\n",
+        "📖 Proje Hakkında\n",
+        "Bu proje, NASA tarafından sağlanan 1910-2024 yılları arasındaki gözlem verilerini kullanarak, Dünya'nın yakınından geçen gök cisimlerinin (NEO - Near Earth Objects) gezegenimiz için bir tehlike oluşturup oluşturmadığını makine öğrenmesi algoritmaları ile tahmin etmeyi amaçlamaktadır.\n",
+        "\n",
+        "Gök cisimlerinin göreli hızları, Dünya'yı teğet geçme mesafeleri ve tahmini çapları gibi fiziksel özelliklerini analiz ederek, hangi asteroitlerin \"Tehlikeli\" (Hazardous) sınıfına girdiğini belirleyen uçtan uca bir sınıflandırma modeli geliştirilmiştir.\n",
+        "\n",
+        "🔍 Teknik Yaklaşım ve Çözülen Zorluklar\n",
+        "Bir asteroitin tehlikeli olup olmadığını tahmin etmek, klasik bir sınıflandırma probleminin ötesinde zorluklar barındırır. Bu projede özellikle şu veri bilimi süreçlerine odaklanılmıştır:\n",
+        "\n",
+        "**Veri Dengesizliği (Imbalanced Data) ile Mücadele:** Evrendeki çoğu gök cismi\n",
+        "tehlikeli değildir. Modelin kolaya kaçıp her cisme \"Tehlikesiz\" etiketini vurmasını engellemek için eğitim verisinde SMOTE (Sentetik Azınlık Aşırı Örnekleme Tekniği) kullanılarak azınlık sınıfı dengelenmiştir.\n",
+        "\n",
+        "**Doğru Metrik Seçimi:** Söz konusu Dünya'nın güvenliği olduğunda, tek bir tehlikeli asteroiti bile gözden kaçırmak istemeyiz. Bu nedenle modelin başarısı yanıltıcı olabilen Doğruluk (Accuracy) oranıyla değil; Recall (Duyarlılık), F1-Score ve ROC-AUC metrikleri referans alınarak değerlendirilmiştir.\n",
+        "\n",
+        "**Model Karşılaştırması:** Sınıflandırma problemi için Lojistik Regresyon ve Random Forest (Rastgele Orman) algoritmaları kurularak performansları test edilmiştir.\n",
+        "\n",
+        "Bu çalışma; veri ön işleme, dengesiz veri setleriyle başa çıkma ve model değerlendirme metriklerinin doğru yorumlanması gibi temel makine öğrenmesi disiplinlerini uyguladığım bir portföy projesidir."
+      ],
+      "metadata": {
+        "id": "bdYYzRHvLn50"
+      }
     },
     {
       "source": [
@@ -146,7 +172,7 @@
           ]
         }
       ],
-      "execution_count": 1
+      "execution_count": null
     },
     {
       "cell_type": "code",
@@ -186,7 +212,7 @@
         "id": "ThbY6nH7vv8Z",
         "outputId": "8e57966c-1f2c-455b-fdf7-f33292f5ff8f"
       },
-      "execution_count": 13,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -214,7 +240,7 @@
         "trusted": true,
         "id": "FJ4OnkRKvv8a"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -233,7 +259,7 @@
         "trusted": true,
         "id": "7A3JJsoevv8a"
       },
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -256,7 +282,7 @@
         "id": "0ke4HhKIvv8a",
         "outputId": "7b392f7b-18b9-492b-a785-a8b3acff2bc6"
       },
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -303,7 +329,7 @@
         "id": "PT1NJxPbvv8b",
         "outputId": "b15d894c-f41f-4501-86e7-8d604599a91f"
       },
-      "execution_count": 17,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -675,7 +701,7 @@
         "id": "_fW3VES_vv8b",
         "outputId": "c1f309dc-826e-415e-ae14-59297d13ac5f"
       },
-      "execution_count": 18,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1044,7 +1070,7 @@
         "id": "fjhA10XYvv8c",
         "outputId": "ec58564b-f6ae-46c0-f1d0-9bf8dbb232c4"
       },
-      "execution_count": 19,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1079,7 +1105,7 @@
         "id": "1DWaqXbSvv8c",
         "outputId": "643ac632-576e-475b-dd93-66e8184b0707"
       },
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1126,7 +1152,7 @@
         "id": "Xef5Y5SEvv8d",
         "outputId": "99ee3eaf-d25c-42ce-abf0-9970da8f9ff6"
       },
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1166,7 +1192,7 @@
         "id": "zqng__b4vv8d",
         "outputId": "5d404a15-1fe6-49c7-8aa4-79c4b33f4ff0"
       },
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "display_data",
@@ -1202,7 +1228,7 @@
         "trusted": true,
         "id": "w-zMdbk1vv8e"
       },
-      "execution_count": 23,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1224,7 +1250,7 @@
         "trusted": true,
         "id": "Jmk4j6q8vv8e"
       },
-      "execution_count": 24,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1244,7 +1270,7 @@
         "trusted": true,
         "id": "Dj77ObExvv8f"
       },
-      "execution_count": 25,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1270,7 +1296,7 @@
         "id": "ql6aNphEvv8f",
         "outputId": "147e2ffb-f09c-4d7a-8be4-82e6619936a7"
       },
-      "execution_count": 26,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1319,7 +1345,7 @@
         "id": "unvulVb4vv8f",
         "outputId": "bfff5d5f-62d4-45b0-dcd5-b50edc598185"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1395,7 +1421,7 @@
         "id": "7f_Ygpaevv8g",
         "outputId": "d8f534af-cbd8-42be-b93a-c8858694e98d"
       },
-      "execution_count": 28,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1430,7 +1456,7 @@
         "trusted": true,
         "id": "iRhloMeRvv8g"
       },
-      "execution_count": 29,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1456,7 +1482,7 @@
         "id": "BOw-pNXzvv8h",
         "outputId": "612ec7f7-b7a1-4a23-8c92-5abb84e57437"
       },
-      "execution_count": 30,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1498,7 +1524,7 @@
         "id": "cqOrzJgTvv8h",
         "outputId": "7373f929-69d0-4897-e81e-3d02e51697be"
       },
-      "execution_count": 31,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1539,7 +1565,7 @@
         "id": "ML5yJUJBvv8h",
         "outputId": "9eb7c8a6-ac8a-465b-bd30-daea469e16fc"
       },
-      "execution_count": 32,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1582,7 +1608,7 @@
       "metadata": {
         "id": "0FOciDQKDTYs"
       },
-      "execution_count": 37,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1619,7 +1645,7 @@
         "id": "2zBvXYPpDabY",
         "outputId": "67769970-35b7-4a6f-ea2c-3bb23430ecba"
       },
-      "execution_count": 38,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1717,7 +1743,7 @@
         "id": "ilLWmBqeLebG",
         "outputId": "bf6b3273-6deb-451a-df1b-4d68156f4f3e"
       },
-      "execution_count": 14,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1781,7 +1807,7 @@
         "id": "n66rEwYwL5m_",
         "outputId": "67609636-b115-4af2-b6c0-76592189c0e5"
       },
-      "execution_count": 15,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1837,7 +1863,7 @@
       "metadata": {
         "id": "VO8O60VpMoKh"
       },
-      "execution_count": 16,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -1877,7 +1903,7 @@
         "id": "aDS_yDgiMxH4",
         "outputId": "d847169a-4b92-4c5d-b0f7-f7bb697805f0"
       },
-      "execution_count": 18,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1930,7 +1956,7 @@
         "id": "KyILILwcNh88",
         "outputId": "9d18b481-2b8e-4eb6-991b-8d28010c06fb"
       },
-      "execution_count": 20,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -1972,7 +1998,7 @@
         "id": "AiFCtSIaNxjJ",
         "outputId": "6ad39d56-e6b7-4f38-a1d0-9446ea985f65"
       },
-      "execution_count": 21,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2012,7 +2038,7 @@
         "id": "NimJWmISOLzK",
         "outputId": "71fde259-eeda-48b9-b578-93b28441bbb3"
       },
-      "execution_count": 22,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2054,7 +2080,7 @@
         "id": "PUibAQEYPpGL",
         "outputId": "a22186d9-4910-4b58-efd1-b2a80d7fafc3"
       },
-      "execution_count": 30,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -2120,7 +2146,7 @@
         "id": "f5oODjyiQh-e",
         "outputId": "13529c4b-8ce9-4930-9d48-832f67549b78"
       },
-      "execution_count": 35,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
