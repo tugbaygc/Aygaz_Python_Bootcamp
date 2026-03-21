@@ -1,4 +1,5 @@
 🚀 Aygaz Python Bootcamp Projeleri
+
 Bu depo, Python programlama ve veri bilimi yeteneklerimi geliştirmek amacıyla hazırladığım projeleri içermektedir. Depoda, temel algoritma mantığını kavratan interaktif oyunlardan, gerçek dünya verileriyle çalışan makine öğrenmesi sınıflandırma modellerine kadar farklı seviyelerde çalışmalar bulunmaktadır.
 
 📂 Projeler
